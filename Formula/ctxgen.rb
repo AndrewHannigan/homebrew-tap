@@ -1,25 +1,25 @@
 class Ctxgen < Formula
   desc "Generate AGENTS.md and CLAUDE.md from .context folder"
   homepage "https://github.com/andrewhannigan/ctxgen"
-  version "0.2.3"
+  version "0.2.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.3/ctxgen-aarch64-apple-darwin.tar.xz"
-      sha256 "ff53078a11c0304c390cc1a898b731af14ff275f4740a556712df6dd888e3500"
+      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.4/ctxgen-aarch64-apple-darwin.tar.xz"
+      sha256 "ede3e5fce2f8363f745fbaf5f9119da92e2d93554d5e45b2597ed2b9173a91bb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.3/ctxgen-x86_64-apple-darwin.tar.xz"
-      sha256 "4540e9b45be87b57c23a1a5e125a276f09b112fce785b3a62eb440fb37990ede"
+      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.4/ctxgen-x86_64-apple-darwin.tar.xz"
+      sha256 "55da2916a77d9cdd68b0e7c6a34c44ce8be9d9833ced17ea1fba3cd47aefc959"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.3/ctxgen-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a37dbe016e9b903a2346192174c725eb9c360b820120ff309d051e9b14851bf7"
+      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.4/ctxgen-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "20c6c5a638c8582e247f66c4bd30168c19b28b7d440a343f49a50cd1e2cbf54c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.3/ctxgen-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f0df0497623b56209d8e5e4cf9545bf93dcee0288d2b0ddc0bc6443fed614a4d"
+      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.4/ctxgen-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "56ec2fe844e6fa78e7948145ba45bbd5b5096eec3fa67551048ed753f494526b"
     end
   end
   license "MIT"
