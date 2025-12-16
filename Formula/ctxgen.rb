@@ -1,35 +1,37 @@
 class Ctxgen < Formula
   desc "Generate AGENTS.md and CLAUDE.md from .context folder"
   homepage "https://github.com/andrewhannigan/ctxgen"
-  version "0.2.4"
+  version "0.2.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.4/ctxgen-aarch64-apple-darwin.tar.xz"
-      sha256 "ede3e5fce2f8363f745fbaf5f9119da92e2d93554d5e45b2597ed2b9173a91bb"
+      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.6/ctxgen-aarch64-apple-darwin.tar.xz"
+      sha256 "a2a2cb5ef9ba61270311efe035c6f20e934a4bb815dae2ff5155204fe2e3ff7c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.4/ctxgen-x86_64-apple-darwin.tar.xz"
-      sha256 "55da2916a77d9cdd68b0e7c6a34c44ce8be9d9833ced17ea1fba3cd47aefc959"
+      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.6/ctxgen-x86_64-apple-darwin.tar.xz"
+      sha256 "6a98171343bc98e1e6185c2746c0423e2a369812bf3b36b72ae875219ba9b031"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.4/ctxgen-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "20c6c5a638c8582e247f66c4bd30168c19b28b7d440a343f49a50cd1e2cbf54c"
+      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.6/ctxgen-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2aa4a38f82219dc0be14fe5607605806841ae4e4d9528973ad6e36ae64a6772d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.4/ctxgen-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "56ec2fe844e6fa78e7948145ba45bbd5b5096eec3fa67551048ed753f494526b"
+      url "https://github.com/andrewhannigan/ctxgen/releases/download/v0.2.6/ctxgen-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "75540e3fe4bed54c96b862af02c10510e237e324b812c0d6323abffa0555a75a"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":              {},
+    "aarch64-unknown-linux-gnu":         {},
+    "x86_64-apple-darwin":               {},
+    "x86_64-pc-windows-gnu":             {},
+    "x86_64-unknown-linux-gnu":          {},
+    "x86_64-unknown-linux-musl-dynamic": {},
+    "x86_64-unknown-linux-musl-static":  {},
   }.freeze
 
   def target_triple
