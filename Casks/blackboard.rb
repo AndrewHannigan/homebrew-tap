@@ -1,6 +1,6 @@
 cask "blackboard" do
-  version "0.5.0"
-  sha256 "592b7824165207d5ce0d894e24d2790a7319f2bab96a9f4e50596c56539627b0"
+  version "0.6.0"
+  sha256 "6b3aaa25c75f27a12aeba59f821ca236fac53ff6cd5c001d6dd6c9922e7fc6a3"
 
   url "https://github.com/AndrewHannigan/blackboard/releases/download/v#{version}/Blackboard-#{version}-arm64.zip"
   name "Blackboard"
@@ -8,7 +8,7 @@ cask "blackboard" do
   homepage "https://github.com/AndrewHannigan/blackboard"
 
   app "Blackboard.app"
-  binary "#{appdir}/Blackboard.app/Contents/Resources/app/bin/bb"
+  binary "#{appdir}/Blackboard.app/Contents/Resources/app.asar.unpacked/bin/bb"
 
   caveats <<~EOS
     Blackboard is not signed. To open it, run:
