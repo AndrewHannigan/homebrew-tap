@@ -1,18 +1,16 @@
 cask "blackboard" do
-  version "0.6.0"
-  sha256 "6b3aaa25c75f27a12aeba59f821ca236fac53ff6cd5c001d6dd6c9922e7fc6a3"
+  version "0.8.0"
+  sha256 "27b01b545540e64683f36d054e338e6c08b297be656ba847545d5cd7b4c43227"
 
-  url "https://github.com/AndrewHannigan/blackboard/releases/download/v#{version}/Blackboard-#{version}-arm64.zip"
+  url "https://github.com/AndrewHannigan/blackboard/releases/download/v0.8.0/Blackboard-0.8.0-arm64.zip"
   name "Blackboard"
-  desc "Minimal scratch text editor"
+  desc "The minimum text editor"
   homepage "https://github.com/AndrewHannigan/blackboard"
 
   app "Blackboard.app"
-  binary "#{appdir}/Blackboard.app/Contents/Resources/app.asar.unpacked/bin/bb"
 
-  caveats <<~EOS
-    Blackboard is not signed. To open it, run:
-      xattr -cr /Applications/Blackboard.app
-  EOS
+  zap trash: [
+    "~/Library/Application Support/Blackboard",
+    "~/Library/Preferences/com.blackboard.app.plist",
+  ]
 end
-
