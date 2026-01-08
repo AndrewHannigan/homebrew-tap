@@ -1,6 +1,6 @@
 cask "blackboard" do
-  version "0.9.3"
-  sha256 "1e06463c5bb2c13adeb7505c2c5e5b6b4b5dbcc422f2cbb4f55214ff286ee0d4"
+  version "0.9.5"
+  sha256 "535cfdf3d3eebdc46aec02b3e572804eef6659da308aa8750c9e296c6956f2be"
 
   url "https://github.com/AndrewHannigan/blackboard/releases/download/v#{version}/Blackboard-#{version}-arm64.zip"
   name "Blackboard"
