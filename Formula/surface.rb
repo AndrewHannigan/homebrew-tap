@@ -1,17 +1,14 @@
 class Surface < Formula
   desc "Float a draggable file thumbnail on your screen"
   homepage "https://github.com/AndrewHannigan/surface"
-  url "https://github.com/AndrewHannigan/surface/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "3380bd0ab2afaeb149350b306054315459461c252faef02e1d044de05e6c8224"
+  url "https://github.com/AndrewHannigan/surface/releases/download/v0.1.1/surface"
+  sha256 "5b627a00e287667158c194dda50ca825f4ac968d1ec05d39df3d0cdff96104fd"
+  version "0.1.1"
   license :cannot_represent
 
   depends_on :macos
 
   def install
-    system "swiftc", "-O", "-o", "surface",
-           "-framework", "Cocoa",
-           "-framework", "QuickLookThumbnailing",
-           "surface.swift"
     bin.install "surface"
   end
 
