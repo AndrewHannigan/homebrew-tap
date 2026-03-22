@@ -1,9 +1,9 @@
 class Surface < Formula
   desc "Float a draggable file thumbnail on your screen"
   homepage "https://github.com/AndrewHannigan/surface"
-  url "https://github.com/AndrewHannigan/surface/releases/download/v0.2.0/surface.tar.gz"
-  sha256 "ba0bebe58f4025486112b3746a518d8c4d7bc514d07400271f63056fd5ce3515"
-  version "0.2.0"
+  url "https://github.com/AndrewHannigan/surface/releases/download/v0.1.0/surface.tar.gz"
+  sha256 "cebf9851b6f00823da639a2ad36debec31db1c37f0750cccee7f9c0ff645be00"
+  version "0.1.0"
   license :cannot_represent
 
   depends_on :macos
